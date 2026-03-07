@@ -117,7 +117,7 @@ pub(crate) fn phase_shift_kernel_one_window<F: Float>(
     let mut output_im_view = output_im.view_mut(output_im_layout);
 
     // We do it 10 times just to make sure
-    for k in 0..10 * num_freq_bins {
+    for k in 0..num_freq_bins {
         let k = k % num_freq_bins;
 
         // Warning: if line size > 1, this will duplicate the same k, while we would want something like [x, x+1, x+2, x+3...
