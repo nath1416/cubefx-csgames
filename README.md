@@ -339,6 +339,9 @@ If this occurs, the tied teams’ submissions will be benchmarked again on a dif
 
 ### Submission
 
+First, fork this repository (use the `Fork` button in the upper-right corner of the GitHub page).
+During the competition, you will be asked to provide the link to your fork.
+
 Only your **final commit** will be evaluated. Make sure it:
 
 1. Passes both critical correctness tests
@@ -703,6 +706,9 @@ En raison de la nature non déterministe des _benchmarks_, des scores extrêmeme
 Si cela se produit, les soumissions des équipes à égalité seront de nouveau _benchmarkées_ sur une machine différente en utilisant des _backends_ supplémentaires (_AMD_ et/ou _Metal_). Ces résultats seront utilisés pour déterminer le classement final.
 
 ### Soumission
+
+Commencez par forker ce dépôt (utilisez le bouton `Fork` dans le coin supérieur droit de la page GitHub).
+Durant la compétition, on vous demandera de fournir le lien vers votre fork.
 
 Seul votre **dernier _commit_** sera évalué. Assurez-vous qu'il :
 
