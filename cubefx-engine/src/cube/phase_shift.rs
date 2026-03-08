@@ -53,7 +53,9 @@ pub fn phase_shift_launch<R: Runtime>(
     dtype: StorageType,
 ) -> Result<(), LaunchError> {
     let cube_count = CubeCount::new_single();
-    let cube_dim = CubeDim::new_single();
+    let plane_size = client.properties().hardware.plane_size_max / 1;
+    let num_planes = 1;
+    let cube_dim = CubeDim::new_2d(plane_size, num_planes);
     let vectorization = 1;
 
     phase_shift_kernel::launch::<R>(
